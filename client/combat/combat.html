@@ -1,0 +1,18 @@
+<template name="Combat">
+	<h1>Combat</h1> 
+	<button>Start Combat</button>
+	<h1>Heroes</h1>
+	<div class="heroes characters">
+		{{#if Template.subscriptionsReady}}
+			{{#each characters}}
+				{{> combatCharacter}}
+			{{/each}}
+		{{else}}
+			<p>Loading</p>
+		{{/if}}
+	</div>
+	<h1>Monsters</h1>
+	<div class="monsters">
+		
+	</div>
+</template>

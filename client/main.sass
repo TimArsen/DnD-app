@@ -1,0 +1,107 @@
+$primary: #8F806E
+$offprimary: #E1D6C8
+$secondary: #47545B
+$offsecondary: #808A8F
+
+body
+	background: $primary
+	padding: 70px 0 150px
+
+body:before
+	display: none
+
+header
+	color: $offprimary
+	background: $secondary
+	padding: 20px 
+	position: fixed
+	top: 0
+	left: 0
+	width: 100%
+	height: 70px
+	z-index: 7
+	h1 
+		margin: 0
+		font-size: 1.6em 
+		float: left
+	.login-buttons-dropdown-align-
+		float: right
+		a
+			color: $offsecondary
+			text-decoration: none 
+
+.side-nav
+	background: $offsecondary
+	height: 100%
+	position: fixed
+	left: 0
+	top: 70px
+	width: 100px
+	list-style: none
+	ul
+		padding: 0
+	li 
+		text-align: center
+		list-style: none
+		background: $secondary
+		margin: 10px
+		a
+			color: $offprimary
+
+.main-layout
+	padding-left: 100px
+
+.new-character-container
+	color: $offprimary
+	position: relative
+	background: $secondary
+	padding: 20px 
+	margin: 20px 
+	.fa-close
+		position: absolute
+		top: 0
+		right: 0
+		padding: 20px   
+	label
+		display: block
+		margin-bottom: 10px 
+	textarea, input
+		width: 100% 
+		margin-bottom: 10px
+
+.btn, button
+	display: inline-block
+	cursor: pointer
+	background: $offprimary
+	color: $secondary
+	text-decoration: none
+	text-transform: uppercase
+	padding: 5px 15px
+	border: solid 3px $secondary
+	border-radius: 2px
+	font-weight: 800
+
+.characters
+	display: flex
+	flex-wrap: wrap 
+	
+.character 
+	@extend .new-character-container
+	max-width: 200px
+	a
+		color: $offsecondary
+	.btn-primary
+		display: block
+	.btn-deny
+		display: none   
+	&.in-combat
+		color: $secondary
+		background: $offprimary 
+		h3
+			border-bottom: $secondary solid 3px
+		.btn-primary
+			display: none
+		.btn-deny
+			display: block
+.picture
+	width: 100%

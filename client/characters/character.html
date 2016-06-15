@@ -1,0 +1,10 @@
+<template name="character">
+	<article class="character {{#if inCombat}}in-combat{{/if}}">
+		<img src="{{picture}}" class="picture">
+		<a href="/characters/{{_id}}">
+			<h3>{{name}}</h3>
+		</a>
+		<button class="button btn-primary toggle-combat pull-right">Add to Combat</button>
+		<button class="button btn-deny toggle-combat pull-right">Remove from Combat</button>
+	</article>
+</template>

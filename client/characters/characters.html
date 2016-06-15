@@ -1,0 +1,12 @@
+<template name="Characters">
+		<section class="characters">
+			{{> NewCharacter}}
+			{{#if Template.subscriptionsReady}}
+				{{#each characters}}
+					{{> character}}
+				{{/each}}
+			{{else}}
+				<p>Loading</p>
+			{{/if}}
+		</section>
+</template>

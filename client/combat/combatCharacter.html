@@ -1,0 +1,12 @@
+<template name="combatCharacter">
+	<article class="character">
+		<img src="{{picture}}" class="picture">
+		<a href="/characters/{{_id}}">
+			<h3>{{name}}</h3>
+		</a>
+			<label for="initiative">Initiative</label>
+			<input type="number" name="initiative">
+			<label for="suprise">Suprise?</label>
+			<input type="checkbox" name="suprise">
+	</article>
+</template>

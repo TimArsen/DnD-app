@@ -1,0 +1,104 @@
+body {
+  background: #8F806E;
+  padding: 70px 0 150px; }
+
+body:before {
+  display: none; }
+
+header {
+  color: #E1D6C8;
+  background: #47545B;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 70px;
+  z-index: 7; }
+  header h1 {
+    margin: 0;
+    font-size: 1.6em;
+    float: left; }
+  header .login-buttons-dropdown-align- {
+    float: right; }
+    header .login-buttons-dropdown-align- a {
+      color: #808A8F;
+      text-decoration: none; }
+
+.side-nav {
+  background: #808A8F;
+  height: 100%;
+  position: fixed;
+  left: 0;
+  top: 70px;
+  width: 100px;
+  list-style: none; }
+  .side-nav ul {
+    padding: 0; }
+  .side-nav li {
+    text-align: center;
+    list-style: none;
+    background: #47545B;
+    margin: 10px; }
+    .side-nav li a {
+      color: #E1D6C8; }
+
+.main-layout {
+  padding-left: 100px; }
+
+.new-character-container, .character {
+  color: #E1D6C8;
+  position: relative;
+  background: #47545B;
+  padding: 20px;
+  margin: 20px; }
+  .new-character-container .fa-close, .character .fa-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 20px; }
+  .new-character-container label, .character label {
+    display: block;
+    margin-bottom: 10px; }
+  .new-character-container textarea, .character textarea, .new-character-container input, .character input {
+    width: 100%;
+    margin-bottom: 10px; }
+
+.btn, button {
+  display: inline-block;
+  cursor: pointer;
+  background: #E1D6C8;
+  color: #47545B;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 5px 15px;
+  border: solid 3px #47545B;
+  border-radius: 2px;
+  font-weight: 800; }
+
+.characters {
+  display: flex;
+  flex-wrap: wrap; }
+
+.character {
+  max-width: 200px; }
+  .character a {
+    color: #808A8F; }
+  .character .btn-primary {
+    display: block; }
+  .character .btn-deny {
+    display: none; }
+  .character.in-combat {
+    color: #47545B;
+    background: #E1D6C8; }
+    .character.in-combat h3 {
+      border-bottom: #47545B solid 3px; }
+    .character.in-combat .btn-primary {
+      display: none; }
+    .character.in-combat .btn-deny {
+      display: block; }
+
+.picture {
+  width: 100%; }
+
+/*# sourceMappingURL=main.css.map */
