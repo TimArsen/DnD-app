@@ -1,0 +1,11 @@
+<template name="NewMonster">
+	<div class="new-monster-container">
+		<h1>New Monster</h1>
+		{{> quickForm 
+			collection="Monsters" 
+			id="insertMonsterForm" 
+			type="insert" 
+			class='new-monster-form'
+		}}
+	</div>
+</template>
