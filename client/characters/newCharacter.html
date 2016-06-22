@@ -1,8 +1,11 @@
 <template name="NewCharacter">
 	<div class="new-character-container">
 		<h1>New Character</h1>
-		{{> quickForm collection="Characters"
-		id="insertCharacterForm" type="insert"
-		class='new-character-form'}}
+		{{> quickForm 
+			collection="Characters" 
+			id="insertCharacterForm" 
+			type="insert" 
+			class='new-character-form'
+		}}
 	</div>
 </template>
