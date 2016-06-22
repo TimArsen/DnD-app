@@ -1,4 +1,4 @@
-Monsters = new Mongo.Collection('Monsters');
+Monsters = new Mongo.Collection('monsters');
 
 Monsters.allow({
 	insert: function(userId, doc) {
@@ -47,7 +47,7 @@ MonsterSchema = new SimpleSchema({
 });
 
 Meteor.methods({
-	toggleCombat: function(id, combat) {
+	toggleMonsterCombat: function(id, combat) {
 		Monsters.update(id, {
 			$set: {
 				inCombat: !combat
