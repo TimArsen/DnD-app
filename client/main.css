@@ -1,3 +1,14 @@
+.combatCharacter {
+  background: #8F806E; }
+
+.sm-picture {
+  width: 50px;
+  float: left; }
+
+.initiative {
+  float: right;
+  border: none; }
+
 body {
   background: #8F806E;
   padding: 70px 0 150px; }
