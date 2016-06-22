@@ -8,5 +8,8 @@ Template.Combat.onCreated(function(){
 Template.Combat.helpers({
 	characters: ()=> {
 		return Characters.find({});
+	},
+	combats: ()=> {
+		return Combats.find({});
 	}
 });
